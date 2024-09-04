@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonalidad RGB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-5">
+        <!-- Card for a modern look -->
+        <div class="card shadow-lg p-4 rounded-lg">
+            <h1 class="text-center mb-4">Tonalidad RGB</h1>
+            <div class="row mb-4">
+                <!-- Red input -->
+                <div class="col-md-4 mb-3">
+                    <label for="rojo" class="form-label">Rojo:</label>
+                    <input type="range" id="rojo" min="0" max="255" value="0" class="form-range custom-range">
+                    <input type="number" id="rojo-num" min="0" max="255" value="0" class="form-control mt-2">
+                </div>
+                <!-- Green input -->
+                <div class="col-md-4 mb-3">
+                    <label for="verde" class="form-label">Verde:</label>
+                    <input type="range" id="verde" min="0" max="255" value="0" class="form-range custom-range">
+                    <input type="number" id="verde-num" min="0" max="255" value="0" class="form-control mt-2">
+                </div>
+                <!-- Blue input -->
+                <div class="col-md-4 mb-3">
+                    <label for="azul" class="form-label">Azul:</label>
+                    <input type="range" id="azul" min="0" max="255" value="0" class="form-range custom-range">
+                    <input type="number" id="azul-num" min="0" max="255" value="0" class="form-control mt-2">
+                </div>
+            </div>
+            <!-- Color Picker -->
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <input type="color" id="color-picker" value="#000000" class="form-control form-control-color mx-auto d-inline-block" style="width: 150px;">
+                </div>
+            </div>
+            <!-- Color Preview and Hex Code -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="color-preview" class="border rounded-lg shadow-sm" style="width: 100%; height: 150px;"></div>
+                    <p id="hex-code" class="text-center mt-3 font-weight-bold"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
